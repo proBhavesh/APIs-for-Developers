@@ -10,8 +10,9 @@
 		<script type="text/javascript" src="app.js" defer></script>
 	</head>
 	<body>
+		<div id="progressBarContainer"></div>
 		<section class="search-bar">
-			<div>Search</div>
+			<div class="logo">APIs</div>
 			<form class="search-form">
 				<input
 					type="text"
@@ -19,17 +20,19 @@
 					id="input-text"
 					placeholder="Search.."
 				/>
-				<button type="submit"></button>
 			</form>
 		</section>
 		<section class="all">
 			<section class="links" id="ex4">
+				<div class="categ-heading">Categories</div>
 				<nav class="nav-bar" id="nav-bar-id"></nav>
 			</section>
 			<section class="main-content">
 				<div id="random-div"></div>
-				<header class="headings"></header>
-				<div class="main-content"></div>
+				<div class="main-content-div" id="main-content-div-id">
+					<div class="count" id="count-div"></div>
+					<div id="userReq-div"></div>
+				</div>
 			</section>
 		</section>
 	</body>

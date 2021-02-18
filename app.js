@@ -5,6 +5,9 @@ const ui = new UI();
 //init api responses class
 const data = new getData();
 
+//declaring variables
+
+const inputText = document.getElementById("input-text");
 //getting all apis
 function allApi() {
 	data.every().then((data) => {
@@ -54,5 +57,16 @@ data.random().then((data) => {
 	const randomApiAns = data.randomApiRes;
 	// return randomApiAns;
 	ui.random(randomApiAns);
-	console.log(randomApiAns);
+	// console.log(randomApiAns);
+});
+
+//Getting the queries of the user
+
+inputText.addEventListener("keyup", (e) => {
+	const key = e.target.value;
+	console.log(key);
+	data.userQuery(key).then((data) => {
+		// console.log(data);
+		ui.userReq(data.queryCallRes);
+	});
 });
