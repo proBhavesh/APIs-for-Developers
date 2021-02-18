@@ -11,6 +11,7 @@ body {
 	/*color: white;*/
 	color: rgb(139, 145, 156);
 	background: #0a0b0d;
+	
 }
 
 /*all div styling excluding nav bar*/
@@ -53,7 +54,8 @@ body {
 	width: 40vw;
 	height: 2.5rem;
 	background: #171A1F;
-	color: white
+	color: white;
+	font-family: "Roboto Mono", monospace;
 }
 
 .logo{
@@ -76,8 +78,13 @@ body {
 	/*border: solid 1px white;*/
 	margin: 4px;
 	padding: 5px 8px;
-}
 
+}
+.categs:hover{
+	color: white;
+	cursor: pointer;
+	transition: transform 0.5s ease 0s, color 0.5s ease 0s;
+}
 .nav-bar {
 	margin-left: 1rem;
 }
@@ -96,8 +103,85 @@ body {
 	height: 100vh;
 	overflow: scroll;
 	overflow-x: hidden;
+	margin-left: 1rem;
+	display: flex;
+	flex-direction: column;
+/* 	justify-content: center; */
+	align-items: center;
 }
 
+/* main content styling */
+.randomDivUi{
+	display: flex;
+	flex-direction: column;
+	background: #171A1F;
+	padding: 2rem;
+	border-radius: 5px;
+  width: 60vw;
+	line-height: 3rem
+	}
+
+.api-name{
+	font-size: 2rem;
+}
+
+.api-descipt{
+	font-size: 1.5rem;
+}
+
+.api-categ{
+	
+}
+
+.for-you{
+	font-size: 4rem;
+	align-self: center;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	outline-style: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+.out-all{
+	background: #171A1F;
+	margin: 1rem;
+	padding: 1rem;
+	border-radius: 5px;
+	line-height: 2.5rem
+}
+
+.count{
+	background: #171A1F;
+	padding:1rem;
+	margin:1rem;
+	border-radius: 5px;
+	align-self: start
+}
+
+.userDiv{
+	font-size: 2rem;
+}
 /*body {
 	background: repeating-radial-gradient(
 			circle at bottom left,
@@ -197,11 +281,7 @@ body {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: white; 
+  background: #ababab; 
   border-radius: 10px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
-}
