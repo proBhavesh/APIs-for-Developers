@@ -18,8 +18,8 @@ body {
 .all {
 	/*background: linear-gradient(
 		107.18deg,
-		rgba(255, 255, 255, 0.4) 1.84%,
-		rgba(255, 255, 255, 0.2) 100%
+		rgba(0, 0,0, 0.9) 1.84%,
+		rgba(0, 0, 0, 0.8) 100%
 	);*/
 	/*z-index: 3;*/
 	height: auto;
@@ -43,6 +43,22 @@ body {
 	border-color: rgb(67, 71, 77);
   margin: 2rem;
 }
+
+.search-form{
+display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#send-text{
+	margin-left: 0.3rem;
+	
+	border: solid 0.5px #313131;
+	padding: 1rem;
+	border-radius: 5px;
+	
+}
+
 
 #input-text {
 	padding: 0.5rem;
@@ -192,7 +208,7 @@ a:active {
 	background: url("srh.svg");
 	width: 2rem;
 	height: 2rem;
-	border: none;
+	/*! border: none; */
 	background-repeat: no-repeat;
 	outline-style: none;
 }
@@ -277,8 +293,8 @@ a:active {
 		);
 	background-blend-mode: overlay;
 	height: 100vh;
-}
-*/
+}*/
+
 
 /*scroll bar*/
 
@@ -295,7 +311,7 @@ a:active {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ababab; 
+  background:white; 
   border-radius: 10px;
 }
 
