@@ -117,9 +117,13 @@ body {
 	background: #171A1F;
 	padding: 2rem;
 	border-radius: 5px;
-  width: 60vw;
+  	width: 60vw;
 	line-height: 3rem
 	}
+
+.main-content-div{
+	width: 70vw
+}
 
 .api-name{
 	font-size: 2rem;
@@ -181,6 +185,16 @@ a:active {
 
 .userDiv{
 	font-size: 2rem;
+}
+
+
+#send-text{
+	background: url("srh.svg");
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	background-repeat: no-repeat;
+	outline-style: none;
 }
 /*body {
 	background: repeating-radial-gradient(

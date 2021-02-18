@@ -4,7 +4,7 @@ class UI {
 		this.randomDiv = document.getElementById("random-div");
 		this.userDiv = document.getElementById("userReq-div");
 		this.countDiv = document.getElementById("count-div");
-		this.mainContentDiv = document.getElementById("main-content-div-id");
+		// this.mainContentDiv = document.getElementById("user");
 	}
 
 	links(categos) {
@@ -27,13 +27,14 @@ class UI {
 		`;
 	}
 
+	// this.clearUi();
 	userReq(input) {
+		this.clearUi();
 		console.log(input);
 		var i = 0;
 		this.countDiv.innerHTML = `
 			<div class="no-of-results">Results : ${input.count}</div>
 		`;
-		// this.mainContentDiv.innerHTML = "";
 		var i;
 		for (i = 0; i < input.entries.length; i++) {
 			this.userDiv.innerHTML += `
@@ -44,5 +45,9 @@ class UI {
 			</div>
 			`;
 		}
+	}
+
+	clearUi() {
+		this.userDiv.innerHTML = "";
 	}
 }
