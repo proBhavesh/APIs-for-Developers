@@ -42,6 +42,7 @@ body {
 	border-bottom: solid 0.5px;
 	border-color: rgb(67, 71, 77);
   margin: 2rem;
+	margin-bottom: 0;
 }
 
 .search-form{
@@ -57,7 +58,7 @@ display: flex;
 	padding: 0.5rem;
 	font-size: 1rem;
 	border: none;
-/* 	border-radius: 0.5rem; */
+	border-radius: 0.5rem;
 	margin: 0.2rem;
 	outline-style: none;
 	width: 40vw;
@@ -71,6 +72,8 @@ display: flex;
 	color: white;
 	font-size: 2rem;
 	font-weight: bold;
+	line-height: 3rem;
+	margin-bottom: 2rem;
 	
 }
 /*links styling*/
@@ -81,6 +84,8 @@ display: flex;
 	float: left;
 	overflow: auto;
 	height: 100vh;
+	z-index: 4;
+	transition: 0.5s;
 }
 
 .categs {
@@ -116,7 +121,7 @@ display: flex;
 	margin-left: 1rem;
 	display: flex;
 	flex-direction: column;
-/* 	justify-content: center; */
+/*! justify-content: center; */
 	align-items: center;
 }
 
@@ -128,11 +133,12 @@ display: flex;
 	padding: 2rem;
 	border-radius: 5px;
   	width: 60vw;
-	line-height: 3rem
+	line-height: 3rem;
+	margin-top: 1rem;
 	}
 
 .main-content-div{
-	width: 70vw
+	width: 70vw;
 }
 
 .api-name{
@@ -311,8 +317,40 @@ a:active {
 /*progress bar*/
 
 #myBar {
+	position:sticky;
   width: 100%;
   height: 3px;
   background-color: white;
   color: white;
 }
+
+/* adding reponsiveness for mobiles */
+@media screen and (max-width:641px){
+	.main-content{
+		grid-column: 1/13;
+	}
+	.links{
+/* 		visibility: hidden; */
+		background: gray;
+		color: white;
+	}
+	.randomDivUi{
+		width: 100vw;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
