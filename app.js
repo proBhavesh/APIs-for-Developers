@@ -63,18 +63,27 @@ data.random().then((data) => {
 
 //Getting the queries of the user
 
-// inputText.addEventListener("keyup", (e) => {
-// 	const key = e.target.value;
-// 	console.log(key);
-// 	data.userQuery(key).then((data) => {
-// 		// console.log(data);
-// 		ui.userReq(data.queryCallRes);
-// 	});
-// });
+inputText.addEventListener("keyup", (e) => {
+	const key = e.target.value;
+	console.log(key);
+	if (key === "") {
+		console.log("Empty");
+		ui.clearUi();
+	} else {
+		data.userQuery(key).then((data) => {
+			// console.log(data);
+			ui.userReq(data.queryCallRes);
+		});
+	}
+});
 
-function send() {
-	var input = document.getElementById("input-text").value;
-	data.userQuery(input).then((data) => {
+//click on cats
+
+function acat(a) {
+	const q = document.getElementById(a).textContent;
+	console.log(q);
+	data.userQuery(q).then((data) => {
+		console.log(data);
 		ui.userReq(data.queryCallRes);
 	});
 }

@@ -4,13 +4,16 @@ class UI {
 		this.randomDiv = document.getElementById("random-div");
 		this.userDiv = document.getElementById("userReq-div");
 		this.countDiv = document.getElementById("count-div");
+
 		// this.mainContentDiv = document.getElementById("user");
 	}
 
 	links(categos) {
 		var i;
 		for (i = 0; i < categos.length; i++) {
-			this.nav.innerHTML += `<div class="categs">- ${categos[i]}</div>`;
+			this.nav.innerHTML += `<div class="categs" id="categs-id${[
+				i,
+			]}" onclick="acat(this.id)"><a>${categos[i]}</a></div>`;
 		}
 	}
 
@@ -49,5 +52,8 @@ class UI {
 
 	clearUi() {
 		this.userDiv.innerHTML = "";
+		this.countDiv.innerHTML = `
+			<div class="no-of-results">Results : ${0}</div>
+		`;
 	}
 }

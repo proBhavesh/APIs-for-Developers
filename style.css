@@ -24,8 +24,8 @@ body {
 	/*z-index: 3;*/
 	height: auto;
 	width: auto;
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
+	/*-webkit-backdrop-filter: blur(10px);*/
+	/*backdrop-filter: blur(10px);*/
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(12, 1fr);
@@ -50,21 +50,14 @@ display: flex;
 	justify-content: center;
 }
 
-#send-text{
-	margin-left: 0.3rem;
-	
-	border: solid 0.5px #313131;
-	padding: 1rem;
-	border-radius: 5px;
-	
-}
+
 
 
 #input-text {
 	padding: 0.5rem;
 	font-size: 1rem;
 	border: none;
-	border-radius: 0.5rem;
+/* 	border-radius: 0.5rem; */
 	margin: 0.2rem;
 	outline-style: none;
 	width: 40vw;
@@ -99,10 +92,11 @@ display: flex;
 .categs:hover{
 	color: white;
 	cursor: pointer;
-	transition: transform 0.5s ease 0s, color 0.5s ease 0s;
+	transition: transform 0.2s ease 0s, color 0.2s ease 0s;
 }
 .nav-bar {
 	margin-left: 1rem;
+
 }
 
 .categ-heading{
@@ -143,6 +137,7 @@ display: flex;
 
 .api-name{
 	font-size: 2rem;
+	transition: transform 0.2s ease 0s, color 0.2s ease 0s;
 }
 
 .api-descipt{
@@ -183,6 +178,7 @@ a:active {
   color: white;
 }
 
+
 .out-all{
 	background: #171A1F;
 	margin: 1rem;
@@ -201,16 +197,13 @@ a:active {
 
 .userDiv{
 	font-size: 2rem;
+	transition: transform 0.2s ease 0s, color 0.2s ease 0s;
 }
 
 
 #send-text{
-	background: url("srh.svg");
-	width: 2rem;
-	height: 2rem;
-	/*! border: none; */
-	background-repeat: no-repeat;
 	outline-style: none;
+	visibility: hidden;
 }
 /*body {
 	background: repeating-radial-gradient(
