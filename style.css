@@ -211,6 +211,26 @@ a:active {
 	outline-style: none;
 	visibility: hidden;
 }
+
+
+.openbtn{
+	visibility: hidden;
+}
+
+.closebtn{
+	visibility: hidden;
+	font-size: 2rem;
+}
+
+.cat-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#link-id{
+	
+}
 /*body {
 	background: repeating-radial-gradient(
 			circle at bottom left,
@@ -335,6 +355,26 @@ a:active {
 		color: white;
 	}
 	.randomDivUi{
+		width: 100vw;
+	}
+	
+	.openbtn{
+		visibility: visible;
+		position: relative;
+		top: 32px;
+		font-size: 14px;
+		background: black;
+		color: white;
+		border: none;
+		width: 20px;
+	}
+	
+	.closebtn{
+		visibility: visible;
+		font-size: 2rem;
+	}
+	
+	.links{
 		width: 100vw;
 	}
 }
