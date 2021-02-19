@@ -345,7 +345,7 @@ a:active {
 }
 
 /* adding reponsiveness for mobiles */
-@media screen and (max-width:641px){
+@media screen and (max-width:800px){
 	.main-content{
 		grid-column: 1/13;
 	}
@@ -361,12 +361,14 @@ a:active {
 	.openbtn{
 		visibility: visible;
 		position: relative;
-		top: 32px;
-		font-size: 14px;
-		background: black;
+    top: 2px;
+		left:10px;
+		font-size: 19px;
+		background: #171A1F;
 		color: white;
 		border: none;
 		width: 20px;
+		border-radius: 5px;
 	}
 	
 	.closebtn{
@@ -375,7 +377,7 @@ a:active {
 	}
 	
 	.links{
-		width: 100vw;
+		width: 0vw;
 	}
 }
 

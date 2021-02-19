@@ -133,3 +133,12 @@ function closeNav() {
 	document.getElementById("links-id").style.width = "0";
 	// document.getElementById("main").style.marginLeft = "0";
 }
+
+//width
+
+function widthEl() {
+	if (screen && screen.width < 800) {
+		var linksId = document.getElementById("links-id");
+		linksId.style.width = 0;
+	}
+}

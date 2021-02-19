@@ -4,7 +4,6 @@ class UI {
 		this.randomDiv = document.getElementById("random-div");
 		this.userDiv = document.getElementById("userReq-div");
 		this.countDiv = document.getElementById("count-div");
-
 		// this.mainContentDiv = document.getElementById("user");
 	}
 
@@ -13,7 +12,9 @@ class UI {
 		for (i = 0; i < categos.length; i++) {
 			this.nav.innerHTML += `<div class="categs" id="categs-id${[
 				i,
-			]}" onclick="acat(this.id);move()"><a>${categos[i]}</a></div>`;
+			]}" onclick="acat(this.id);move();widthEl()"><a>${
+				categos[i]
+			}</a></div>`;
 		}
 	}
 
