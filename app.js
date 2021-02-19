@@ -71,7 +71,7 @@ inputText.addEventListener("keyup", (e) => {
 		ui.clearUi();
 	} else {
 		data.userQuery(key).then((data) => {
-			// console.log(data);
+			move();
 			ui.userReq(data.queryCallRes);
 		});
 	}
@@ -86,4 +86,25 @@ function acat(a) {
 		console.log(data);
 		ui.userReq(data.queryCallRes);
 	});
+}
+
+//progress bar
+
+var i = 0;
+function move() {
+	if (i == 0) {
+		i = 1;
+		var elem = document.getElementById("myBar");
+		var width = 1;
+		var id = setInterval(frame, 0);
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+				i = 0;
+			} else {
+				width++;
+				elem.style.width = width + "%";
+			}
+		}
+	}
 }

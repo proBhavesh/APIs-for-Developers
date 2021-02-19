@@ -13,7 +13,7 @@ class UI {
 		for (i = 0; i < categos.length; i++) {
 			this.nav.innerHTML += `<div class="categs" id="categs-id${[
 				i,
-			]}" onclick="acat(this.id)"><a>${categos[i]}</a></div>`;
+			]}" onclick="acat(this.id);move()"><a>${categos[i]}</a></div>`;
 		}
 	}
 
