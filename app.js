@@ -142,3 +142,12 @@ function widthEl() {
 		linksId.style.width = 0;
 	}
 }
+
+function logoText() {
+	if (screen && screen.width < 800) {
+		var logoText1 = document.querySelector(".logo");
+		logoText1.innerHTML = "APis";
+	}
+}
+
+logoText();

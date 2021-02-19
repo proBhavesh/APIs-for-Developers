@@ -231,88 +231,7 @@ a:active {
 #link-id{
 	
 }
-/*body {
-	background: repeating-radial-gradient(
-			circle at bottom left,
-			#fedc00 0,
-			#fedc00 5.55556%,
-			#fcb712 0,
-			#fcb712 11.11111%,
-			#f7921e 0,
-			#f7921e 16.66667%,
-			#e87f24 0,
-			#e87f24 22.22222%,
-			#dd6227 0,
-			#dd6227 27.77778%,
-			#dc4c27 0,
-			#dc4c27 33.33333%,
-			#ca3435 0,
-			#ca3435 38.88889%,
-			#b82841 0,
-			#b82841 44.44444%,
-			#953751 0,
-			#953751 50%,
-			#364c88 0,
-			#364c88 55.55556%,
-			#16599d 0,
-			#16599d 61.11111%,
-			#02609e 0,
-			#02609e 66.66667%,
-			#0073a9 0,
-			#0073a9 72.22222%,
-			#008aa4 0,
-			#008aa4 77.77778%,
-			#239a87 0,
-			#239a87 83.33333%,
-			#7cba6d 0,
-			#7cba6d 88.88889%,
-			#becc2f 0,
-			#becc2f 94.44444%,
-			#e0d81d 0,
-			#e0d81d 100%
-		),
-		repeating-radial-gradient(
-			circle at bottom right,
-			#fedc00 0,
-			#fedc00 5.55556%,
-			#fcb712 0,
-			#fcb712 11.11111%,
-			#f7921e 0,
-			#f7921e 16.66667%,
-			#e87f24 0,
-			#e87f24 22.22222%,
-			#dd6227 0,
-			#dd6227 27.77778%,
-			#dc4c27 0,
-			#dc4c27 33.33333%,
-			#ca3435 0,
-			#ca3435 38.88889%,
-			#b82841 0,
-			#b82841 44.44444%,
-			#953751 0,
-			#953751 50%,
-			#364c88 0,
-			#364c88 55.55556%,
-			#16599d 0,
-			#16599d 61.11111%,
-			#02609e 0,
-			#02609e 66.66667%,
-			#0073a9 0,
-			#0073a9 72.22222%,
-			#008aa4 0,
-			#008aa4 77.77778%,
-			#239a87 0,
-			#239a87 83.33333%,
-			#7cba6d 0,
-			#7cba6d 88.88889%,
-			#becc2f 0,
-			#becc2f 94.44444%,
-			#e0d81d 0,
-			#e0d81d 100%
-		);
-	background-blend-mode: overlay;
-	height: 100vh;
-}*/
+
 
 
 /*scroll bar*/
@@ -346,6 +265,10 @@ a:active {
 
 /* adding reponsiveness for mobiles */
 @media screen and (max-width:800px){
+	body{
+		overflow-x: hidden;
+	}
+
 	.main-content{
 		grid-column: 1/13;
 	}
@@ -361,7 +284,7 @@ a:active {
 	.openbtn{
 		visibility: visible;
 		position: relative;
-    top: 2px;
+    top: 2rem;
 		left:10px;
 		font-size: 19px;
 		background: #171A1F;
@@ -374,6 +297,7 @@ a:active {
 	.closebtn{
 		visibility: visible;
 		font-size: 2rem;
+		margin-right: 1rem;
 	}
 	
 	.links{

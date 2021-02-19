@@ -16,18 +16,13 @@
 		<div id="progressBarContainer"></div>
 		<section class="search-bar" id="search-bar-id">
 			<div class="logo">APIs for Developers</div>
-			<form class="search-form">
+			<form class="search-form" onsubmit="return false;">
 				<input
 					type="text"
 					name="user-input"
 					id="input-text"
 					placeholder="Search"
-				/>
-				<input
-					type="button"
-					name="date"
-					onclick="send()"
-					id="send-text"
+					autocomplete="off"
 				/>
 			</form>
 		</section>
@@ -38,13 +33,13 @@
 		<section class="all">
 			<section class="links" id="links-id">
 				<div class="cat-btn">
+					<div class="categ-heading">Categories</div>
 					<a
 						href="javascript:void(0)"
 						class="closebtn"
 						onclick="closeNav()"
 						>&times;</a
 					>
-					<div class="categ-heading">Categories</div>
 				</div>
 				<nav class="nav-bar" id="nav-bar-id"></nav>
 			</section>
