@@ -146,7 +146,7 @@ function widthEl() {
 function logoText() {
 	if (screen && screen.width < 800) {
 		var logoText1 = document.querySelector(".logo");
-		logoText1.innerHTML = "APis";
+		logoText1.innerHTML = "APIs";
 	}
 }
 

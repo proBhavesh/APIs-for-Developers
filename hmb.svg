@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px" height="24px">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.35;stroke:none;"/>
+  </g>
+</mask>
+<image id="image23860545" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAASklEQVRIie3OsQ2AMBBD0X/MEWUfxB4sftnDNCClScVVkd8A3wYz24ikS9LQfynp/LoxDSTQiv5mRHSAoyi4NA/cwCho5tsys2083GVVqIIFN74AAAAASUVORK5CYII="/>
+</defs>
+<g id="surface23860541">
+<use xlink:href="#image23860545" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 20 7 L 4 7 C 2.894531 7 2 6.105469 2 5 C 2 3.894531 2.894531 3 4 3 L 20 3 C 21.105469 3 22 3.894531 22 5 C 22 6.105469 21.105469 7 20 7 Z M 20 7 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 20 21 L 4 21 C 2.894531 21 2 20.105469 2 19 C 2 17.894531 2.894531 17 4 17 L 20 17 C 21.105469 17 22 17.894531 22 19 C 22 20.105469 21.105469 21 20 21 Z M 20 21 "/>
+</g>
+</svg>
