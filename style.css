@@ -160,6 +160,7 @@ display: flex;
 .for-you{
 	font-size: 4rem;
 	align-self: center;
+	margin-bottom: 2rem;
 }
 
 a{
@@ -190,7 +191,7 @@ a:active {
 
 .out-all{
 	background: #171A1F;
-	margin: 1rem;
+	margin-top: 1rem;
 	padding: 1rem;
 	border-radius: 5px;
 	line-height: 2.5rem
@@ -288,7 +289,10 @@ a:active {
 		color: white;
 	}
 	.randomDivUi{
-		width: 100vw;
+		width: 90vw;
+		/*! display: flex; */
+		/*! align-self: center; */
+		/*! margin-left: -34px; */
 	}
 	
 	.openbtn{
@@ -320,7 +324,9 @@ a:active {
 	.main-content-div{
 		width: 90vw;
 	}
-	
+	.main-content{
+		margin-left: 0px;
+	}
 }
 
 
