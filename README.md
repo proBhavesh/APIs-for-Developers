@@ -1,4 +1,4 @@
-# Get APIs
+# APIs for Developers
 
 ## Get 500+ free APIs in 40+ categories 
 
