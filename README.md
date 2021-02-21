@@ -4,4 +4,6 @@
 
 ### Made using [PublicAPI](https://github.com/public-apis/public-apis)'s API
 
+### [Check it out](https://getapi.vercel.app/) 
+
 ![aly text](https://github.com/proBhavesh/ex/blob/main/Web%20capture_20-2-2021_192734_getapi.vercel.app.jpeg?raw=true)
