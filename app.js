@@ -19,7 +19,6 @@ function allApi() {
 }
 
 //getting all categories
-
 async function categorie() {
 	data.categCall().then(async (data) => {
 		const allCategs = await data.cateCallRes;
@@ -81,7 +80,7 @@ inputText.addEventListener("keyup", (e) => {
 
 function acat(a) {
 	const q = document.getElementById(a).textContent;
-	console.log(q);
+	console.log("this is acat",q);
 	data.userQuery(q).then((data) => {
 		console.log(data);
 		ui.userReq(data.queryCallRes);

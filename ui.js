@@ -9,11 +9,11 @@ class UI {
 
 	links(categos) {
 		var i;
-		for (i = 0; i < categos.length; i++) {
+		for (i = 0; i < categos.categories.length; i++) {
 			this.nav.innerHTML += `<div class="categs" id="categs-id${[
 				i,
 			]}" onclick="acat(this.id);move();widthEl()"><a>${
-				categos[i]
+				categos.categories[i]
 			}</a></div>`;
 		}
 	}
